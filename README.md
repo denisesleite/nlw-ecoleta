@@ -18,36 +18,36 @@ Expo: Ferramenta utilizada no desenvolvimento mobile com React Native que permit
 
 Para funcionalidade da aplicação deve-se instalar a última versão do Node.js e rodar os seguintes comandos:
 
-## BACK-END
-# API
-# Instalando dependências
+### BACK-END
+#### API
+#### Instalando dependências
 $ npm install
 
-# Criar as migrations do banco SQLite
+#### Criar as migrations do banco SQLite
 $ npx knex migrate:latest
 
-# Executar seeds
+#### Executar seeds
 $ npx knex seed:run
 
-# Iniciar servidor 
+#### Iniciar servidor 
 $ yarn dev
 
-# Porta 3333
+#### Porta 3333
 
 -------------------------------
 
-## FRONT-END
+### FRONT-END
 
-# Instalando dependências
+#### Instalando dependências
 $ npm install
 
-# Iniciar Projeto
+#### Iniciar Projeto
 $ npm start
 
-# Porta 3000
+#### Porta 3000
 
-## MOBILE
+#### MOBILE
 
-# Iniciar Projeto
+#### Iniciar Projeto
 npm start
 
