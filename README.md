@@ -53,7 +53,7 @@ $ npm start
 $ npm install
 
 #### Iniciar Projeto
-npm start
+$ npm start
 
 Recomendável instalar o Expo no seu smartphone e escanear o QRcode para ver a aplicação funcionando.
 
