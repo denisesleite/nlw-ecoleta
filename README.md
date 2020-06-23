@@ -18,7 +18,11 @@ Nesta aplicação foi usado as seguintes tecnologias:
 <li><b>Axios:</b> Biblioteca que permite requisições para o backend NodeJs (API REST).</li>
 <li><b>Expo:</b> Ferramenta utilizada no desenvolvimento mobile com React Native que permite o fácil acesso às API’s.</li>
 
-Para funcionalidade da aplicação deve-se instalar a última versão do Node.js e rodar os seguintes comandos:
+#### Para funcionalidade da aplicação deve-se instalar a última versão do Node.js e rodar os seguintes comandos:
+
+$ git clone https://github.com/denisesleite/nlw-ecoleta.git
+
+-------------------------------
 
 ### BACK-END
 #### Instalar dependências
