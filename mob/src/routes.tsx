@@ -15,8 +15,8 @@ const Routes = () => {
             {/* headerMode remove cabeçalho da página */}
             {/* primeira chaves código JS, segunda chaves objeto */}
             <AppStack.Navigator headerMode="none" 
-            screenOptions={
-            { cardStyle: {
+            screenOptions={{ 
+                cardStyle: {
                 backgroundColor: "#F0F0F5"
              }}
             }>

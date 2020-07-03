@@ -1,8 +1,8 @@
-// import {Request, Response} from 'express';
+import {Request, Response} from 'express';
 import knex from '../database/connection';
 
 class PointController {
-    async index(request: any, response: any) {
+    async index(request: Request, response: Response) {
         //quando lida com filtros pega sempre do query params
         const { city, uf, items } = request.query;
 
@@ -22,7 +22,7 @@ class PointController {
         return response.json(points);
      }
 
-    async show(request: any, response: any) {
+    async show(request: Request, response: Response) {
         //desestruturação
         const { id } = request.params;
 
@@ -40,12 +40,17 @@ class PointController {
          * Retorna todos os itens que estão relacionados com o ponto acima
          */
 
+        const serializedPoint = { 
+            ...point,
+        };
+
         //listar todos os items que tem relação com o ponto de coleta
         const items = await knex('items')
         .join('point_items', 'items.id', '=', 'point_items.item_id')
-        .where('point_items.point_id', id);
+        .where('point_items.point_id', id)
+        .select('items.title');
 
-        return response.json(point);
+        return response.json({ point: serializedPoint, items });
     }
 
     async create(request: any, response: any) {
