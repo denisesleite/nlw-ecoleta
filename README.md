@@ -18,15 +18,7 @@ Nesta aplicação foi usado as seguintes tecnologias:
 <li><b>Axios:</b> Biblioteca que permite requisições para o backend NodeJs (API REST).</li>
 <li><b>Expo:</b> Ferramenta utilizada no desenvolvimento mobile com React Native que permite o fácil acesso às API’s.</li>
 
-<<<<<<< HEAD
 Para funcionalidade da aplicação deve-se instalar a última versão do Node.js e rodar os seguintes comandos:
-=======
-#### Para funcionalidade da aplicação deve-se instalar a última versão do Node.js e rodar os seguintes comandos:
-
-$ git clone https://github.com/denisesleite/nlw-ecoleta.git
-
--------------------------------
->>>>>>> 502d884c577ac4d17ab3462c6177895bffb39d44
 
 ### BACK-END
 #### Instalar dependências
@@ -41,13 +33,10 @@ $ npx knex seed:run
 #### Iniciar servidor 
 $ yarn dev
 
-<<<<<<< HEAD
 ou
 
 $ npm run dev
 
-=======
->>>>>>> 502d884c577ac4d17ab3462c6177895bffb39d44
 -------------------------------
 
 ### FRONT-END
@@ -70,12 +59,9 @@ $ npm install
 #### Iniciar Projeto
 $ npm start
 
-<<<<<<< HEAD
 ou
 
 $ expo start
 
-=======
->>>>>>> 502d884c577ac4d17ab3462c6177895bffb39d44
 Recomendável instalar o Expo no seu smartphone e escanear o QRcode para ver a aplicação funcionando.
 
