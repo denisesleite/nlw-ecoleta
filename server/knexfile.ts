@@ -1,3 +1,5 @@
+
+//ARQUIVO DE CONEXAO COM O BANCO DE DADOS SQLITE
 import path from 'path';
 
 module.exports = {

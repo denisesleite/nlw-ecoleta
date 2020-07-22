@@ -5,6 +5,7 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import routes from './routes';
+import { errors } from 'celebrate';
 
 const app = express();
 
@@ -16,6 +17,8 @@ app.use(routes);
 
 //static - servir arquivos estáticos de uma pasta específica
 app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
+
+app.use(errors()); //retorna erros
 
 //Rota: Endereço completo da requisição
 //Recurso: Qual entidade estamos acessando do sistema
@@ -49,7 +52,7 @@ app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 // app.get('/users', (request: any, response: any) => {
 //     const search = String(request.query.search);
 
-//     //se existe a informação de user ele verifica se o user inclui dentro do texto dele o search, se não fica a lista de user normal 
+//     //se existe a informação de user ele verifica se o user inclui dentro do texto dele o search, se não fica a lista de user normal
 //     const filteredUsers = search ? users.filter(user => user.includes(search)) : users;
 
 //     //se não tiver o return e haver mais códigos abaixo ele vai continuar executando
@@ -59,7 +62,7 @@ app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 // //Request params /:id damos o nome do parâmetro na própria rota
 // app.get('/users/:id', (request: any, response: any) => {
 //     const id = Number(request.params.id);
-    
+
 //     const user = users[id];
 
 //     return response.json(user);
@@ -78,4 +81,3 @@ app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 // });
 
 app.listen(3333);
-

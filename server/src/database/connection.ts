@@ -1,3 +1,5 @@
+//CRIANDO CONEXÃO DA APLICAÇÃO
+
 // O Knex é usado como um construtor de consultas SQL no Node.JS
 import knex from 'knex';
 import path from 'path';
